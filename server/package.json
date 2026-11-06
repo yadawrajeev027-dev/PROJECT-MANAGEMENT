@@ -1,0 +1,64 @@
+{
+  "name": "projectpulse-ai-server",
+  "version": "1.0.0",
+  "description": "Backend API server for ProjectPulse AI",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test:health": "node src/utils/testHealth.js",
+    "test:models": "node src/utils/testModels.js",
+    "test:auth": "node src/utils/testAuth.js",
+    "test:projects": "node src/utils/testProjects.js",
+    "test:upload": "node src/utils/testUpload.js",
+    "test:extraction": "node src/utils/testExtraction.js",
+    "test:db": "node src/utils/testDbConnection.js",
+    "test:analysis": "node src/utils/testAnalysis.js",
+    "test:step7": "node src/utils/testAnalysis.js",
+    "test:verification": "node src/utils/testVerification.js",
+    "test:step8": "node src/utils/testVerification.js",
+    "test:ai": "node src/utils/testAi.js",
+    "test:step9": "node src/utils/testAi.js",
+    "test:progress": "node src/utils/testProgress.js",
+    "test:step10": "node src/utils/testProgress.js",
+    "test:integration": "node src/utils/testIntegration.js",
+    "test:step11": "node src/utils/testIntegration.js",
+    "test:workflow": "node src/utils/testUploadToProgressWorkflow.js",
+    "test:consistency": "node src/utils/testProgressConsistency.js",
+    "test:deployment": "node src/utils/testDeploymentConnection.js",
+    "test:auth-integration": "node src/utils/testAuthIntegration.js"
+  },
+  "keywords": [
+    "projectpulse",
+    "express",
+    "node",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^8.1.0",
+    "@babel/traverse": "^8.1.0",
+    "@typescript-eslint/typescript-estree": "^8.72.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.3",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.0",
+    "multer": "^2.5.0",
+    "parse5": "^8.1.0",
+    "postcss": "^8.5.32",
+    "yauzl": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

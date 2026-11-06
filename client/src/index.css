@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F7F7F5;
+  color: #171717;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Base Headings & Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #171717;
+  letter-spacing: -0.015em;
+}
+
+/* Card & Panel Base Helpers */
+.white-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+}
+
+.white-panel {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D8D8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B0B0B0;
+}
+
+/* Form Elements Consistency */
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  background-color: #FFFFFF;
+  color: #171717;
+  border-color: #EAEAEA;
+  border-radius: 8px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #F5C400;
+  box-shadow: 0 0 0 2px rgba(245, 196, 0, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+}
+
+/* Legacy utility overrides to guarantee perfect clean theme across all views */
+.glass-panel,
+.glass-card {
+  background-color: #FFFFFF !important;
+  border-color: #EAEAEA !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: none !important;
+}
+
+.glass-card:hover {
+  border-color: #D4D4D4 !important;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06) !important;
+}

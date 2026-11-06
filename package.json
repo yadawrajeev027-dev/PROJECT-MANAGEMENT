@@ -1,0 +1,25 @@
+{
+  "name": "projectpulse-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered software project analysis and progress tracking platform",
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "projectpulse",
+    "code-analysis",
+    "mern",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}

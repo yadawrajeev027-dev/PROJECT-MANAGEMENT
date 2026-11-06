@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+**/node_modules/
+/.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build outputs
+dist/
+**/dist/
+build/
+out/
+*.tsbuildinfo
+
+# Uploads & temporary private files
+uploads/
+**/uploads/
+temp/
+**/temp/
+*.zip
+*.tar.gz
+.chrome-temp-profile/
+**/.chrome-temp-profile/
+*.chrome-temp-profile*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# Editor & OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
